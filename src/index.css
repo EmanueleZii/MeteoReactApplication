@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -11,11 +11,11 @@ html {
 }
 
 body {
-  font-family: "Cinzel Decorative", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
   height: 100vh;
-  color: #222;
-  background-color: #eabfb9;
+  color: #1a1a1a;
+  background-color: #d4e6f1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,35 +28,42 @@ body {
   width: 112rem;
   gap: 4rem;
   padding: 6rem 0;
-  border: 2px solid #222;
-  outline: 2px solid #222;
+  border: 2px solid #1a1a1a;
+  outline: 2px solid #1a1a1a;
   outline-offset: 1.2rem;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 6rem;
   letter-spacing: 2px;
   word-spacing: 5px;
+  color: #2c3e50;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 2.4rem;
+  color: #34495e;
 }
 
 input {
   font-family: inherit;
   color: inherit;
   font-size: 2rem;
-  background-color: #f0d2ce;
+  background-color: #ebf5fb;
   padding: 1.6rem 3.2rem;
   border: none;
   width: 32rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 input:focus {
-  outline: 2px solid #222;
+  outline: 2px solid #1a1a1a;
+  background-color: #d6eaf8;
 }
 
 .weather {
@@ -66,27 +73,56 @@ input:focus {
 }
 
 .day {
-  background-color: #f0d2ce;
+  background-color: #ebf5fb;
   padding: 1.6rem 0 2rem;
   width: 12.8rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.2rem;
   cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.day:hover {
+  transform: scale(1.05);
+  background-color: #d6eaf8;
 }
 
 .day span {
   font-size: 5.2rem;
+  color: #2c3e50;
 }
 
 .day.important {
-  background-color: #ecc5c0;
-  outline: 2px solid #222;
+  background-color: #aed6f1;
+  outline: 2px solid #1a1a1a;
 }
 
 .loader {
   font-size: 2.4rem;
   font-weight: 700;
+  color: #2c3e50;
+}
+button{
+  background-color: #2c3e50;
+  border: #2c3e50;
+  padding: 20px 20px;
+  font-size: large;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #333;
+  border: #333;
+  padding: 20px 20px;
+  font-size: large;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10%;
+  cursor: pointer;
 }
